@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
-using Ice.Discord.Internal.Configuration;
 using NLog;
 
 namespace Ice.Discord
@@ -15,20 +14,15 @@ namespace Ice.Discord
         private IDependencyMap _map;
         private DiscordSocketClient _client;
         private CommandService _commands;
-        private ServerConfiguration _config;
-        private ConcurrentDictionary<IGuild, ServerConfiguration> _serverConfigs;
-        static Logger CommandLogger { get; set; }
+        private ConcurrentDictionary<IGuild, GuildConfiguration> _serverConfigs;
 
         public CommandHandler(IDependencyMap map)
         {
-            CommandLogger = LogManager.GetCurrentClassLogger();
-
             _map = map;
             _commands = new CommandService();
             map.Add(_commands);
-            _serverConfigs = map.Get<ConcurrentDictionary<IGuild, ServerConfiguration>>();
+            _serverConfigs = map.Get<ConcurrentDictionary<IGuild, GuildConfiguration>>();
             _commands.AddModulesAsync(Assembly.GetEntryAssembly()).Wait();
-            _commands.Commands.AsParallel().ForAll(I => CommandLogger.Debug("Loaded command: {0} - {1}", I.Name, I.RunMode.ToString()));
         }
         
         private async Task HandleCommandAsync(SocketMessage msg)
@@ -40,23 +34,16 @@ namespace Ice.Discord
 
             int argPos = 0;
 
-            if (message.HasStringPrefix(_config.PrefixString, ref argPos) || message.HasMentionPrefix(_client.CurrentUser, ref argPos))
+            if (message.HasStringPrefix(config.PrefixString, ref argPos) || message.HasMentionPrefix(_client.CurrentUser, ref argPos))
             {
                 var context = new ServerCommandContext(_client, message, config);
 
                 // Provide the dependency map when executing commands
                 var result = await _commands.ExecuteAsync(context, argPos, _map);
-                if (!result.IsSuccess)
+                if (!result.IsSuccess && result.Error != CommandError.UnknownCommand)
                 {
-                    if ((result is SearchResult))
-                        return;
-                    if (result is ExecuteResult exeResult)
-                        CommandLogger.Error("```" + exeResult.Exception.ToString() + "```");
-                    else
-                        CommandLogger.Error(result.ErrorReason);
+                    await message.Channel.SendMessageAsync(result.ErrorReason);
                 }
-                else
-                    CommandLogger.Info($"\"{message.Author.Username}\" ran the following command: {message.Content}");
             }
         }
     }

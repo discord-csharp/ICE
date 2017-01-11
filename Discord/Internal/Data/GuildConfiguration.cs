@@ -5,6 +5,8 @@ namespace Ice.Discord.Internal.Data
     [Table("GuildConfigurations")]
     public class GuildConfiguration
     {
+        public ulong GuildId { get; set; }
+
         public string PrefixString { get; set; } = "~";
 
         public bool EnableLoggingChannel { get; set; } = false;

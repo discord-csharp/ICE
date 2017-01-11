@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ICE.Services.DotNet
+namespace Ice.Services.DotNet.Nuget
 {
     public class Version
     {

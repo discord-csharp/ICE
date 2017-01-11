@@ -1,0 +1,6 @@
+C:\Users\Mathias\Projects\ICE\Services\bin\Debug\netstandard1.4\ICE.Services.dll
+C:\Users\Mathias\Projects\ICE\Services\bin\Debug\netstandard1.4\ICE.Services.pdb
+C:\Users\Mathias\Projects\ICE\Services\obj\Debug\netstandard1.4\ICE.Services.csprojResolveAssemblyReference.cache
+C:\Users\Mathias\Projects\ICE\Services\obj\Debug\netstandard1.4\ICE.Services.AssemblyInfo.cs
+C:\Users\Mathias\Projects\ICE\Services\obj\Debug\netstandard1.4\ICE.Services.dll
+C:\Users\Mathias\Projects\ICE\Services\obj\Debug\netstandard1.4\ICE.Services.pdb

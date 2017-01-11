@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26014.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICE.Services", "Services\ICE.Services.csproj", "{1CF52B18-115D-4DF9-A946-E34312920C72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ice.Services", "Services\Ice.Services.csproj", "{1CF52B18-115D-4DF9-A946-E34312920C72}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICE.Discord", "Discord\ICE.Discord.csproj", "{9C5F4B24-D387-4497-A7FC-909B0966883C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ice.Discord", "Discord\Ice.Discord.csproj", "{9C5F4B24-D387-4497-A7FC-909B0966883C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{1CF52B18-115D-4DF9-A946-E34312920C72} = {1CF52B18-115D-4DF9-A946-E34312920C72}
 	EndProjectSection

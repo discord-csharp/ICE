@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ICE.Services
+namespace Ice.Services.Exceptions
 {
     public class ICEServiceException : Exception
     {

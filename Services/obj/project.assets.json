@@ -4522,9 +4522,9 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mathias\\Projects\\ICE\\Services\\ICE.Services.csproj",
-      "projectName": "ICE.Services",
-      "projectPath": "C:\\Users\\Mathias\\Projects\\ICE\\Services\\ICE.Services.csproj",
+      "projectUniqueName": "C:\\Users\\Mathias\\Projects\\ICE\\Services\\Ice.Services.csproj",
+      "projectName": "Ice.Services",
+      "projectPath": "C:\\Users\\Mathias\\Projects\\ICE\\Services\\Ice.Services.csproj",
       "outputPath": "C:\\Users\\Mathias\\Projects\\ICE\\Services\\obj\\",
       "outputType": "NETCore",
       "originalTargetFrameworks": [

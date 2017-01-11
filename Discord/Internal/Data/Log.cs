@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ICE.Discord.Internal.Data
+namespace Ice.Discord.Internal.Data
 {
     [Table("Logs", Schema = "ContactsBotSchema")]
     public class Log

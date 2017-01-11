@@ -4,7 +4,7 @@ using Discord.WebSocket;
 using NLog;
 using NLog.Targets;
 
-namespace ICE.Discord.Internal.NLogTargets
+namespace Ice.Discord.Internal.NLogTargets
 {
     public class DiscordNLogTarget : TargetWithLayout
     {

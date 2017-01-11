@@ -1,8 +1,8 @@
-﻿using ICE.Discord.Internal.Configuration;
+﻿using Ice.Discord.Internal.Configuration;
 using Microsoft.EntityFrameworkCore;
 using NLog;
 
-namespace ICE.Discord.Internal.Data
+namespace Ice.Discord.Internal.Data
 {
     public class ContactsBotDbContext : DbContext
     {

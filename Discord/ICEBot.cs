@@ -3,13 +3,13 @@ using System.Threading.Tasks;
 using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
-using ICE.Discord.Internal.Configuration;
-using ICE.Discord.Internal.NLogTargets;
+using Ice.Discord.Internal.Configuration;
+using Ice.Discord.Internal.NLogTargets;
 using NLog;
 
-namespace ICE.Discord
+namespace Ice.Discord
 {
-    public class ContactsBot
+    public class IceBot
     {
         DiscordSocketClient _client;
         DependencyMap _map;
@@ -19,12 +19,12 @@ namespace ICE.Discord
         internal static Logger BotLogger { get; set; }
         private DiscordNLogTarget _discordNLogTarget;
 
-        static ContactsBot()
+        static IceBot()
         {
             BotLogger = LogManager.GetCurrentClassLogger();
         }
 
-        public ContactsBot()
+        public IceBot()
         {
             
         }

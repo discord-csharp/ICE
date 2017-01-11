@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ICE.Services.Common.Github
+namespace Ice.Services.Common.Github
 {
 
     public class Owner

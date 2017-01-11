@@ -4,7 +4,7 @@ using System.Net;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace ICE.Services.DotNet
+namespace Ice.Services.DotNet.Nuget
 {
     public class NugetService
     {

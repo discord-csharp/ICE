@@ -1,4 +1,4 @@
-﻿namespace ICE.Discord.Internal.Configuration
+﻿namespace Ice.Discord.Internal.Configuration
 {
     public class PostgreSQLConfiguration
     {

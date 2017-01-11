@@ -1,10 +1,10 @@
 ﻿using System;
-using ICE.Discord.Internal.Configuration;
-using ICE.Discord.Internal.Data;
+using Ice.Discord.Internal.Configuration;
+using Ice.Discord.Internal.Data;
 using NLog;
 using NLog.Targets;
 
-namespace ICE.Discord.Internal.NLogTargets
+namespace Ice.Discord.Internal.NLogTargets
 {
     /// <summary>
     /// An Internally Developed NLog Target that uses Entity Frameworks for
@@ -17,7 +17,7 @@ namespace ICE.Discord.Internal.NLogTargets
         private static Logger PSQLEntityLogger { get; } = LogManager.GetCurrentClassLogger();
         /// <summary>
         /// Attempts to retrieve PostgreSQL configuration information
-        /// independently from ContactsBot instance.
+        /// independently from IceBot instance.
         /// </summary>
         public PSQLEntityFrameworkNLogTarget()
         {

@@ -2,34 +2,6 @@
   "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
-      "AngleSharp/0.9.9": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Dynamic.Runtime": "4.0.11",
-          "System.IO": "4.1.0",
-          "System.Linq": "4.1.0",
-          "System.Net.Primitives": "4.0.11",
-          "System.Net.Requests": "4.0.11",
-          "System.Reflection": "4.1.0",
-          "System.Reflection.Extensions": "4.0.1",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Text.Encoding": "4.0.11",
-          "System.Text.Encoding.Extensions": "4.0.11",
-          "System.Text.RegularExpressions": "4.1.0",
-          "System.Threading": "4.0.11",
-          "System.Threading.Tasks": "4.0.11"
-        },
-        "compile": {
-          "lib/netstandard1.0/AngleSharp.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/AngleSharp.dll": {}
-        }
-      },
       "Discord.Net/1.0.0-rc-00544": {
         "type": "package",
         "dependencies": {
@@ -3173,38 +3145,10 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
-      },
-      "ICE.Services/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.4",
-        "dependencies": {
-          "AngleSharp": "0.9.9",
-          "NETStandard.Library": "1.6.1",
-          "Newtonsoft.Json": "9.0.1"
-        }
       }
     }
   },
   "libraries": {
-    "AngleSharp/0.9.9": {
-      "sha512": "z3h0p8u7p7QFSStWaC+u9cx7+IaRvMmLXqczx5WYW5V9t58kGQg3xMyb4iRI2mIEnePQq2pp2sQAadEl4GhmBg==",
-      "type": "package",
-      "path": "anglesharp/0.9.9",
-      "files": [
-        "anglesharp.0.9.9.nupkg.sha512",
-        "anglesharp.nuspec",
-        "lib/net40/AngleSharp.dll",
-        "lib/net40/AngleSharp.xml",
-        "lib/net45/AngleSharp.dll",
-        "lib/net45/AngleSharp.xml",
-        "lib/netstandard1.0/AngleSharp.dll",
-        "lib/netstandard1.0/AngleSharp.xml",
-        "lib/portable-windows8+net45+windowsphone8+wpa+monoandroid+monotouch/AngleSharp.dll",
-        "lib/portable-windows8+net45+windowsphone8+wpa+monoandroid+monotouch/AngleSharp.xml",
-        "lib/sl50/AngleSharp.dll",
-        "lib/sl50/AngleSharp.xml"
-      ]
-    },
     "Discord.Net/1.0.0-rc-00544": {
       "sha512": "rFZo7pwUA56xJWM7yGPVGoAUtqrm2UpXjmG36UmRBOXXKb9cQaLkXwzDcXNJypctewECQVzAptXJpHd7WruEbg==",
       "type": "package",
@@ -9187,18 +9131,13 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
-    },
-    "ICE.Services/1.0.0": {
-      "type": "project",
-      "path": "../Services/ICE.Services.csproj",
-      "msbuildProject": "../Services/ICE.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
+      "C:\\Users\\Mathias\\Projects\\ICE\\ServIces\\Ice.ServIces.csproj",
       "Discord.Net >= 1.0.0-rc-00544",
       "Humanizer.Core >= 2.1.0",
-      "ICE.Services",
       "Microsoft.EntityFrameworkCore >= 1.1.0",
       "Microsoft.EntityFrameworkCore.Design >= 1.1.0",
       "Microsoft.EntityFrameworkCore.Tools >= 1.1.0-preview4-final",
@@ -9213,9 +9152,9 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mathias\\Projects\\ICE\\Discord\\ICE.Discord.csproj",
-      "projectName": "ICE.Discord",
-      "projectPath": "C:\\Users\\Mathias\\Projects\\ICE\\Discord\\ICE.Discord.csproj",
+      "projectUniqueName": "C:\\Users\\Mathias\\Projects\\ICE\\Discord\\Ice.Discord.csproj",
+      "projectName": "Ice.Discord",
+      "projectPath": "C:\\Users\\Mathias\\Projects\\ICE\\Discord\\Ice.Discord.csproj",
       "outputPath": "C:\\Users\\Mathias\\Projects\\ICE\\Discord\\obj\\",
       "outputType": "NETCore",
       "originalTargetFrameworks": [
@@ -9224,8 +9163,8 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\Users\\Mathias\\Projects\\ICE\\Services\\ICE.Services.csproj": {
-              "projectPath": "C:\\Users\\Mathias\\Projects\\ICE\\Services\\ICE.Services.csproj"
+            "C:\\Users\\Mathias\\Projects\\ICE\\ServIces\\Ice.ServIces.csproj": {
+              "projectPath": "C:\\Users\\Mathias\\Projects\\ICE\\ServIces\\Ice.ServIces.csproj"
             }
           }
         }

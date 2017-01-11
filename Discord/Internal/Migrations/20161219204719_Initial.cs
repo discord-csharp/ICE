@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ICE.Discord.Internal.Migrations
+namespace Ice.Discord.Internal.Migrations
 {
     public partial class Initial : Migration
     {

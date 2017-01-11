@@ -4,9 +4,9 @@ using System.Net;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace ICE.Services.Common.Github
+namespace Ice.Services.Common.Github
 {
-    public class Github
+    public class GithubService
     {
         private string GetGithubSearchUrl(string query, string language) => $"https://api.github.com/search/repositories?q={Uri.EscapeDataString(query)}+language:csharp&sort=stars&order=desc";
 

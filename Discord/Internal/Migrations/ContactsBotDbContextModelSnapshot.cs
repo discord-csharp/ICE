@@ -1,10 +1,10 @@
 ﻿using System;
-using ICE.Discord.Internal.Data;
+using Ice.Discord.Internal.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace ICE.Discord.Internal.Migrations
+namespace Ice.Discord.Internal.Migrations
 {
     [DbContext(typeof(ContactsBotDbContext))]
     partial class ContactsBotDbContextModelSnapshot : ModelSnapshot
@@ -15,7 +15,7 @@ namespace ICE.Discord.Internal.Migrations
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn)
                 .HasAnnotation("ProductVersion", "1.1.0-rtm-22752");
 
-            modelBuilder.Entity("ContactsBot.Data.Karma", b =>
+            modelBuilder.Entity("IceBot.Data.Karma", b =>
                 {
                     b.Property<long>("UserID")
                         .ValueGeneratedOnAdd();
@@ -27,7 +27,7 @@ namespace ICE.Discord.Internal.Migrations
                     b.ToTable("Karmas","ContactsBotSchema");
                 });
 
-            modelBuilder.Entity("ContactsBot.Data.Log", b =>
+            modelBuilder.Entity("IceBot.Data.Log", b =>
                 {
                     b.Property<long>("LogID")
                         .ValueGeneratedOnAdd();
@@ -47,7 +47,7 @@ namespace ICE.Discord.Internal.Migrations
                     b.ToTable("Logs","ContactsBotSchema");
                 });
 
-            modelBuilder.Entity("ContactsBot.Data.Memo", b =>
+            modelBuilder.Entity("IceBot.Data.Memo", b =>
                 {
                     b.Property<string>("MemoName")
                         .ValueGeneratedOnAdd()

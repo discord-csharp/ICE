@@ -2,7 +2,7 @@
 using NLog;
 using NLog.Config;
 
-namespace ICE.Discord
+namespace Ice.Discord
 {
     static class Program
     {
@@ -14,7 +14,7 @@ namespace ICE.Discord
             LogManager.EnableLogging();
             try
             {
-                new ContactsBot().RunBotAsync().GetAwaiter().GetResult();
+                new IceBot().RunBotAsync().GetAwaiter().GetResult();
             }
             catch (Exception ex)
             {

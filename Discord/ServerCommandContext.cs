@@ -1,8 +1,8 @@
 ﻿using Discord;
 using Discord.Commands;
-using ICE.Discord.Internal.Configuration;
+using Ice.Discord.Internal.Configuration;
 
-namespace ICE.Discord
+namespace Ice.Discord
 {
     public class ServerCommandContext : ICommandContext
     {

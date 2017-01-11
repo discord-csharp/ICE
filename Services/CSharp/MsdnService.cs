@@ -7,8 +7,9 @@ using System.Xml;
 using System.Xml.Linq;
 using AngleSharp;
 using AngleSharp.Parser.Html;
+using Ice.Services.Exceptions;
 
-namespace ICE.Services.CSharp
+namespace Ice.Services.CSharp
 {
     public class MsdnService
     {
@@ -36,11 +37,11 @@ namespace ICE.Services.CSharp
             }
             catch (WebException ex)
             {
-                throw new RebaseServiceException("There was a problem parsing the XML response from the reference source", ex);
+                throw new ICEServiceException("There was a problem parsing the XML response from the reference source", ex);
             }
             catch (HtmlParseException ex)
             {
-                throw new RebaseServiceException("There was a problem parsing the HTML response from the reference source.", ex);
+                throw new ICEServiceException("There was a problem parsing the HTML response from the reference source.", ex);
             }
         }
 
@@ -63,11 +64,11 @@ namespace ICE.Services.CSharp
             }
             catch (WebException ex)
             {
-                throw new RebaseServiceException("There was a network issue!", ex);
+                throw new ICEServiceException("There was a network issue!", ex);
             }
             catch (XmlException ex)
             {
-                throw new RebaseServiceException("There was a problem parsing the XML response from MSDN", ex);
+                throw new ICEServiceException("There was a problem parsing the XML response from MSDN", ex);
             }
         }
 

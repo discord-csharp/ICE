@@ -2,8 +2,8 @@
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
   <PropertyGroup Label="Configuration">
     <DefineConstants>TRACE;DEBUG;DEV</DefineConstants>
-    <AssemblyName>ICE.Discord</AssemblyName>
-    <RootNamespace>ICE.Discord</RootNamespace>
+    <AssemblyName>Ice.Discord</AssemblyName>
+    <RootNamespace>Ice.Discord</RootNamespace>
   </PropertyGroup>
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -60,7 +60,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Services\ICE.Services.csproj" />
+    <ProjectReference Include="..\ServIces\Ice.ServIces.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

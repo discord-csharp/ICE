@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ICE.Discord.Internal.Data
+namespace Ice.Discord.Internal.Data
 {
     [Table("GuildConfigurations")]
     public class GuildConfiguration

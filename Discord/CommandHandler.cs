@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
-using ICE.Discord.Internal.Configuration;
+using Ice.Discord.Internal.Configuration;
 using NLog;
 
-namespace ICE.Discord
+namespace Ice.Discord
 {
     public class CommandHandler
     {

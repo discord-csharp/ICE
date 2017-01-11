@@ -4,7 +4,7 @@ using System.IO;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace ICE.Discord.Internal.Configuration
+namespace Ice.Discord.Internal.Configuration
 {
     public class ConfigManager
     {
